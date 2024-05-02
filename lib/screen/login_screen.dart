@@ -40,7 +40,7 @@ class _LOGINSCREENState extends State<LOGINSCREEN> {
               ),
               SizedBox(height: 40),
               MYTEXTFIELD(
-                hintText: "Email or Username",
+                hintText: "Email or",
                 icon: null,
                 onPressed: () {},
               ),
