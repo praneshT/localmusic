@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:localmusic/components/my_button.dart';
 import 'package:localmusic/screen/login_screen.dart';
+import 'package:localmusic/screen/signup_screen.dart';
 
 class LOGINSIGNUPSCREEN extends StatelessWidget {
   const LOGINSIGNUPSCREEN({super.key});
@@ -39,7 +40,14 @@ class LOGINSIGNUPSCREEN extends StatelessWidget {
                 MYBUTTON(
                   customColor: Color.fromARGB(255, 10, 185, 121),
                   text: "Create an account",
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SIGNUPSCREEN(),
+                      ),
+                    );
+                  },
                 ),
               ],
             ),
