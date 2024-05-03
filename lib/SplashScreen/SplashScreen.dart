@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
 import 'package:localmusic/screen/OnbpardScreen/onboard1.dart';
 
 class SplashScreen extends StatefulWidget {
