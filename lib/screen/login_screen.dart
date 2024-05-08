@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:localmusic/HomeScreen/BottomNavigationBar.dart';
 import 'package:localmusic/components/my_button.dart';
 import 'package:localmusic/components/my_text_field.dart';
 import 'package:localmusic/screen/signup_screen.dart';
@@ -163,7 +164,7 @@ class _LOGINSCREENState extends State<LOGINSCREEN> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => SIGNUPSCREEN(),
+                          builder: (context) => BottomNavigationBarExample(),
                         ),
                       );
                     },
