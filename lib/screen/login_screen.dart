@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:localmusic/HomeScreen/BottomNavigationBar.dart';
 import 'package:localmusic/components/my_button.dart';
 import 'package:localmusic/components/my_text_field.dart';
-import 'package:localmusic/screen/signup_screen.dart';
 
 class LOGINSCREEN extends StatefulWidget {
   const LOGINSCREEN({Key? key}) : super(key: key);

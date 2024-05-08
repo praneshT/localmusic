@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:localmusic/SplashScreen/SplashScreen.dart';
-import 'package:localmusic/screen/OnbpardScreen/onboard1.dart';
-import 'package:localmusic/screen/login_signup_screen.dart';
 
 void main() {
   runApp(MYAPP());

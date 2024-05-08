@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:localmusic/FavourtScreen/FavourtScreen.dart';
 import 'package:localmusic/Profile/Profile.dart';
 import 'package:localmusic/Search/Search.dart';
+import 'package:localmusic/screens/home_screen.dart';
 
 class BottomNavigationBarExample extends StatefulWidget {
   const BottomNavigationBarExample({super.key});
@@ -17,10 +18,7 @@ class _BottomNavigationBarExampleState
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Home',
-      style: optionStyle,
-    ),
+    HOMESCREEN(),
     Search(),
     Favourite(),
     Profile(),
