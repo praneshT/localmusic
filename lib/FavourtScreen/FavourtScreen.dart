@@ -8,6 +8,56 @@ class Favourite extends StatefulWidget {
 }
 
 class _FavouriteState extends State<Favourite> {
+  bool isFavorite1 = false;
+  bool isFavorite2 = false;
+  bool isFavorite3 = false;
+  bool isFavorite4 = false;
+  bool isFavorite5 = false;
+  bool isFavorite6 = false;
+  bool isFavorite7 = false;
+
+  void toggleFavorite1() {
+    setState(() {
+      isFavorite1 = !isFavorite1;
+    });
+  }
+
+  void toggleFavorite2() {
+    setState(() {
+      isFavorite2 = !isFavorite2;
+    });
+  }
+
+  void toggleFavorite3() {
+    setState(() {
+      isFavorite3 = !isFavorite3;
+    });
+  }
+
+  void toggleFavorite4() {
+    setState(() {
+      isFavorite4 = !isFavorite4;
+    });
+  }
+
+  void toggleFavorite5() {
+    setState(() {
+      isFavorite5 = !isFavorite5;
+    });
+  }
+
+  void toggleFavorite6() {
+    setState(() {
+      isFavorite6 = !isFavorite6;
+    });
+  }
+
+  void toggleFavorite7() {
+    setState(() {
+      isFavorite7 = !isFavorite7;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,22 +89,30 @@ class _FavouriteState extends State<Favourite> {
                   ),
                 ),
                 child: Center(
-                  child: Image(image: AssetImage("")),
+                  child: Image(
+                    image: AssetImage("assets/images/weekfs.webp"),
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
               title: Text(
-                'Sakkar - MassTamilan.com',
+                'STARBOY - POP',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'S.P.Balasubramaniyan......',
+                'WEEKEND',
                 style: TextStyle(
-                    fontSize: 14,
-                    color:
-                        Colors.white.withOpacity(0.7)), // Lower opacity value
+                  fontSize: 14,
+                  color: Colors.white.withOpacity(0.7),
+                ), // Lower opacity value
               ),
-              trailing: Icon(Icons.favorite),
-              iconColor: Colors.pink,
+              trailing: GestureDetector(
+                onTap: toggleFavorite1,
+                child: Icon(
+                  isFavorite1 ? Icons.favorite : Icons.favorite_border,
+                  color: isFavorite1 ? Colors.pink : null,
+                ),
+              ),
             ),
             Divider(
               height: 10,
@@ -72,22 +130,30 @@ class _FavouriteState extends State<Favourite> {
                   ),
                 ),
                 child: Center(
-                  child: Image(image: AssetImage("")),
+                  child: Image(
+                    image: AssetImage("assets/images/zaynfs.jpg"),
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
               title: Text(
-                'Sakkar - MassTamilan.com',
+                'DUSK TILL DAWN - LOVE/POP',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'S.P.Balasubramaniyan......',
+                'ZAYN MALIK',
                 style: TextStyle(
                     fontSize: 14,
                     color:
                         Colors.white.withOpacity(0.7)), // Lower opacity value
               ),
-              trailing: Icon(Icons.favorite),
-              iconColor: Colors.pink,
+              trailing: GestureDetector(
+                onTap: toggleFavorite2,
+                child: Icon(
+                  isFavorite2 ? Icons.favorite : Icons.favorite_border,
+                  color: isFavorite2 ? Colors.pink : null,
+                ),
+              ),
             ),
             Divider(
               height: 10,
@@ -107,22 +173,28 @@ class _FavouriteState extends State<Favourite> {
                   ),
                 ),
                 child: Center(
-                  child: Image(image: AssetImage("")),
+                  child:
+                      Image(image: AssetImage("assets/images/summerfs.webp")),
                 ),
               ),
               title: Text(
-                'Sakkar - MassTamilan.com',
+                'SUMMERTIME SADNESS - LOVE',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'S.P.Balasubramaniyan......',
+                'LANA DEL REY',
                 style: TextStyle(
                     fontSize: 14,
                     color:
                         Colors.white.withOpacity(0.7)), // Lower opacity value
               ),
-              trailing: Icon(Icons.favorite),
-              iconColor: Colors.pink,
+              trailing: GestureDetector(
+                onTap: toggleFavorite3,
+                child: Icon(
+                  isFavorite3 ? Icons.favorite : Icons.favorite_border,
+                  color: isFavorite3 ? Colors.pink : null,
+                ),
+              ),
             ),
             Divider(
               height: 10,
@@ -140,22 +212,147 @@ class _FavouriteState extends State<Favourite> {
                   ),
                 ),
                 child: Center(
-                  child: Image(image: AssetImage("")),
+                  child: Image(image: AssetImage("assets/images/boxfs.jpg")),
                 ),
               ),
               title: Text(
-                'Sakkar - MassTamilan.com',
+                'THE BOX - RAP',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'S.P.Balasubramaniyan......',
+                'RODDY RICCH',
                 style: TextStyle(
                     fontSize: 14,
                     color:
                         Colors.white.withOpacity(0.7)), // Lower opacity value
               ),
-              trailing: Icon(Icons.favorite),
-              iconColor: Colors.pink,
+              trailing: GestureDetector(
+                onTap: toggleFavorite4,
+                child: Icon(
+                  isFavorite4 ? Icons.favorite : Icons.favorite_border,
+                  color: isFavorite4 ? Colors.pink : null,
+                ),
+              ),
+            ),
+            Divider(
+              height: 10,
+              thickness: 2,
+            ),
+            SizedBox(height: 15),
+            ListTile(
+              leading: Container(
+                width: 45.0,
+                height: 45.0,
+                decoration: BoxDecoration(
+                  // color: Color.fromARGB(255, 25, 20, 45),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(18),
+                  ),
+                ),
+                child: Center(
+                  child: Image(
+                    image: AssetImage("assets/images/drivefs.jpg"),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              title: Text(
+                'NIGHTCALL - BEATS',
+                style: TextStyle(fontSize: 14, color: Colors.white),
+              ),
+              subtitle: Text(
+                'KAVINSKY',
+                style: TextStyle(
+                    fontSize: 14,
+                    color:
+                        Colors.white.withOpacity(0.7)), // Lower opacity value
+              ),
+              trailing: GestureDetector(
+                onTap: toggleFavorite5,
+                child: Icon(
+                  isFavorite5 ? Icons.favorite : Icons.favorite_border,
+                  color: isFavorite5 ? Colors.pink : null,
+                ),
+              ),
+            ),
+            Divider(
+              height: 10,
+              thickness: 2,
+            ),
+            SizedBox(height: 15),
+            ListTile(
+              leading: Container(
+                width: 45.0,
+                height: 45.0,
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(255, 25, 20, 45),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(18),
+                  ),
+                ),
+                child: Center(
+                  child: Image(
+                    image: AssetImage("assets/images/duafs.jpg"),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              title: Text(
+                'LEVITATING - POP',
+                style: TextStyle(fontSize: 14, color: Colors.white),
+              ),
+              subtitle: Text(
+                'DUA LIPA',
+                style: TextStyle(
+                    fontSize: 14,
+                    color:
+                        Colors.white.withOpacity(0.7)), // Lower opacity value
+              ),
+              trailing: GestureDetector(
+                onTap: toggleFavorite6,
+                child: Icon(
+                  isFavorite6 ? Icons.favorite : Icons.favorite_border,
+                  color: isFavorite6 ? Colors.pink : null,
+                ),
+              ),
+            ),
+            Divider(
+              height: 10,
+              thickness: 2,
+            ),
+            SizedBox(height: 15),
+            ListTile(
+              leading: Container(
+                width: 45.0,
+                height: 45.0,
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(255, 25, 20, 45),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(18),
+                  ),
+                ),
+                child: Center(
+                  child: Image(image: AssetImage("assets/images/babyfs.jpg")),
+                ),
+              ),
+              title: Text(
+                'BABY - LOVE',
+                style: TextStyle(fontSize: 14, color: Colors.white),
+              ),
+              subtitle: Text(
+                'JUSTIN BIEBER',
+                style: TextStyle(
+                    fontSize: 14,
+                    color:
+                        Colors.white.withOpacity(0.7)), // Lower opacity value
+              ),
+              trailing: GestureDetector(
+                onTap: toggleFavorite7,
+                child: Icon(
+                  isFavorite7 ? Icons.favorite : Icons.favorite_border,
+                  color: isFavorite7 ? Colors.pink : null,
+                ),
+              ),
             ),
             Divider(
               height: 10,

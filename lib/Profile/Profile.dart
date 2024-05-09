@@ -40,16 +40,16 @@ class _ProfileState extends State<Profile> {
         children: [
           Center(
             child: CircleAvatar(
-              radius: 120,
+              radius: 90,
               backgroundColor: Colors.white,
-              backgroundImage: AssetImage('assets/images/lodin.jpg'),
+              backgroundImage: AssetImage('assets/images/profile.jpg'),
             ),
           ),
           SizedBox(
             height: 10,
           ),
           Text(
-            'John Watson',
+            'SILVER SIVA',
             style: TextStyle(
                 color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
           ),

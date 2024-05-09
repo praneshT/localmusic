@@ -127,183 +127,180 @@ class _HOMESCREENState extends State<HOMESCREEN> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
+    return Scaffold(
+      backgroundColor: Colors.black,
+      appBar: AppBar(
         backgroundColor: Colors.black,
-        appBar: AppBar(
-          backgroundColor: Colors.black,
-          leading: IconButton(
+        leading: IconButton(
+          icon: Icon(
+            Icons.category,
+            color: Colors.white,
+          ),
+          onPressed: () {},
+        ),
+        actions: <Widget>[
+          IconButton(
             icon: Icon(
-              Icons.category,
+              Icons.notifications,
               color: Colors.white,
             ),
             onPressed: () {},
           ),
-          actions: <Widget>[
-            IconButton(
-              icon: Icon(
-                Icons.notifications,
-                color: Colors.white,
-              ),
-              onPressed: () {},
-            ),
-          ],
-        ),
-        body: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: RichText(
-                  text: TextSpan(
-                    style: TextStyle(color: Colors.white),
-                    children: [
-                      TextSpan(
-                        text: "Hey John ",
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold),
-                      ),
-                      WidgetSpan(
-                        child: Text(
-                          "👋",
-                          style: TextStyle(fontSize: 18),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(left: 8),
-                child: Text(
-                  "what u want to have today?",
-                  style: TextStyle(fontSize: 14, color: Colors.white),
-                ),
-              ),
-              SizedBox(height: 10),
-              Container(
-                child: Row(
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                      child: SizedBox(
-                        width: 300,
-                        child: TextField(
-                          decoration: InputDecoration(
-                            border: OutlineInputBorder(
-                                borderSide: BorderSide(
-                              color: Color.fromARGB(255, 10, 185, 121),
-                            )),
-                            hintText: 'Search',
-                            prefixIcon: Icon(
-                              Icons.search,
-                              size: 24,
-                              color: Color.fromARGB(255, 10, 185, 121),
-                            ),
-                          ),
-                        ),
-                      ),
+        ],
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: RichText(
+                text: TextSpan(
+                  style: TextStyle(color: Colors.white),
+                  children: [
+                    TextSpan(
+                      text: "Hey John ",
+                      style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
                     ),
-                    Container(
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: Colors.white30),
-                      width: 70,
-                      height: 60,
-                      child: Icon(
-                        Icons.filter_alt_rounded,
-                        color: Color.fromARGB(255, 10, 185, 121),
+                    WidgetSpan(
+                      child: Text(
+                        "👋",
+                        style: TextStyle(fontSize: 18),
                       ),
                     ),
                   ],
                 ),
               ),
-              SizedBox(height: 10),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text(
-                  'Trending Songs',
-                  style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 8),
+              child: Text(
+                "what u want to have today?",
+                style: TextStyle(fontSize: 14, color: Colors.white),
+              ),
+            ),
+            SizedBox(height: 10),
+            // Container(
+            //   child: Row(
+            //     children: <Widget>[
+            //       Padding(
+            //         padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            //         child: SizedBox(
+            //           width: 300,
+            //           child: TextField(
+            //             decoration: InputDecoration(
+            //               border: OutlineInputBorder(
+            //                   borderSide: BorderSide(
+            //                 color: Color.fromARGB(255, 10, 185, 121),
+            //               )),
+            //               hintText: 'Search',
+            //               prefixIcon: Icon(
+            //                 Icons.search,
+            //                 size: 24,
+            //                 color: Color.fromARGB(255, 10, 185, 121),
+            //               ),
+            //             ),
+            //           ),
+            //         ),
+            //       ),
+            //       Container(
+            //         decoration: BoxDecoration(
+            //             borderRadius: BorderRadius.circular(10),
+            //             color: Colors.white30),
+            //         width: 70,
+            //         height: 60,
+            //         child: Icon(
+            //           Icons.filter_alt_rounded,
+            //           color: Color.fromARGB(255, 10, 185, 121),
+            //         ),
+            //       ),
+            //     ],
+            //   ),
+            // ),
+            SizedBox(height: 10),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                'Trending Songs',
+                style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                height: 300,
+                child: PageView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: Trending.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    final actualIndex =
+                        (index + _currentIndex) % Trending.length;
+                    return buildCard(Trending[actualIndex], list[actualIndex]);
+                  },
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  Text(
+                    'Top Playlists',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold),
                   ),
-                  height: 300,
-                  child: PageView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: Trending.length,
-                    itemBuilder: (BuildContext context, int index) {
-                      final actualIndex =
-                          (index + _currentIndex) % Trending.length;
-                      return buildCard(
-                          Trending[actualIndex], list[actualIndex]);
+                  Spacer(),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SEEALL()),
+                      );
                     },
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  children: [
-                    Text(
-                      'Top Playlists',
+                    child: Text(
+                      'see all',
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 16,
                           fontWeight: FontWeight.bold),
                     ),
-                    Spacer(),
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => SEEALL()),
-                        );
-                      },
-                      child: Text(
-                        'see all',
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 200,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: playlists.length,
+                itemBuilder: (context, index) {
+                  return Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      width: 220,
+                      height: 200,
+                      color: Colors.lightBlue,
+                      child: Image.asset(
+                        playlists[index],
+                        fit: BoxFit.cover,
                       ),
                     ),
-                  ],
-                ),
+                  );
+                },
               ),
-              SizedBox(
-                height: 200,
-                child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: playlists.length,
-                  itemBuilder: (context, index) {
-                    return Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        width: 220,
-                        height: 200,
-                        color: Colors.lightBlue,
-                        child: Image.asset(
-                          playlists[index],
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    );
-                  },
-                ),
-              )
-            ],
-          ),
+            )
+          ],
         ),
       ),
     );

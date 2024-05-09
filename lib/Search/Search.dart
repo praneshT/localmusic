@@ -1,129 +1,3 @@
-// import 'package:flutter/material.dart';
-
-// class Search extends StatefulWidget {
-//   const Search({super.key});
-
-//   @override
-//   State<Search> createState() => _SearchState();
-// }
-
-// class _SearchState extends State<Search> {
-//   List<String> photos = [
-//     'assets/images/pic.jpg'
-//         'assets/images/pic.jpg'
-//         'assets/images/pic.jpg'
-//         'assets/images/pic.jpg'
-//         'assets/images/pic.jpg'
-//   ];
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       backgroundColor: Colors.black,
-//       appBar: AppBar(
-//         backgroundColor: Colors.black,
-//         title: Text(
-//           'Search',
-//           style: TextStyle(
-//               fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
-//         ),
-//         centerTitle: true,
-//       ),
-//       body: Column(
-//         children: [
-//           Padding(
-//             padding: const EdgeInsets.all(8.0),
-//             child: TextField(
-//               decoration: InputDecoration(
-//                 border: OutlineInputBorder(
-//                     borderSide: BorderSide(
-//                   color: Color.fromARGB(255, 10, 185, 121),
-//                 )),
-//                 hintText: 'Search',
-//                 hintStyle: TextStyle(color: Colors.white),
-//                 prefixIcon: Icon(
-//                   Icons.search,
-//                   size: 26,
-//                   color: Color.fromARGB(255, 10, 185, 121),
-//                 ),
-//               ),
-//             ),
-//           ),
-//           SizedBox(
-//             height: 10,
-//           ),
-//           Container(
-//             child: Row(
-//               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-//               children: [
-//                 OutlinedButton(
-//                   onPressed: () {
-//                     // Respond to button press
-//                   },
-//                   child: Text(
-//                     "All",
-//                     style: TextStyle(color: Colors.white),
-//                   ),
-//                 ),
-//                 OutlinedButton(
-//                   onPressed: () {
-//                     // Respond to button press
-//                   },
-//                   child: Text(
-//                     "Artist",
-//                     style: TextStyle(color: Colors.white),
-//                   ),
-//                 ),
-//                 OutlinedButton(
-//                   onPressed: () {
-//                     // Respond to button press
-//                   },
-//                   child: Text(
-//                     " Playlist",
-//                     style: TextStyle(color: Colors.white),
-//                   ),
-//                 ),
-//                 OutlinedButton(
-//                   onPressed: () {
-//                     // Respond to button press
-//                   },
-//                   child: Text(
-//                     "Popular",
-//                     style: TextStyle(color: Colors.white),
-//                   ),
-//                 )
-//               ],
-//             ),
-//           ),
-//           Container(
-//             child: Column(
-//               children: [
-//                 ListView.builder(
-//                     itemCount: 8,
-//                     itemBuilder: (context, index) {
-//                       return Padding(
-//                         padding: const EdgeInsets.only(top: 10),
-//                         child: ListTile(
-//                           leading: Image.asset(photos[index]),
-//                           iconColor: Colors.white,
-//                           title: Text(
-//                             "  MP3 SONGS",
-//                             style: TextStyle(color: Colors.white),
-//                           ),
-//                           subtitle: Text(
-//                             'sivharathi',
-//                             style: TextStyle(color: Colors.white),
-//                           ),
-//                         ),
-//                       );
-//                     }),
-//               ],
-//             ),
-//           )
-//         ],
-//       ),
-//     );
-//   }
-// }
 import 'package:flutter/material.dart';
 import 'package:localmusic/Search/Popular.dart';
 
@@ -136,26 +10,42 @@ class Search extends StatefulWidget {
 
 class _SearchState extends State<Search> {
   List<String> photos = [
-    'assets/images/Logo.png',
-    'assets/images/pic.jpg',
-    'assets/images/pic.jpg',
-    'assets/images/pic.jpg',
-    'assets/images/pic.jpg',
+    'assets/images/hukums.webp',
+    'assets/images/dums.jpg',
+    'assets/images/cap1s.jpg',
+    'assets/images/suriya3.jpg',
+    'assets/images/strs.jpg',
   ];
   List<String> text = [
-    'Sakkar - MassTamilan.com',
-    "Thangamagan-masstamil",
-    'Sakkar - MassTamilan.com',
-    "Thangamagan-masstamil",
-    'Sakkar - MassTamilan.com',
+    'JAILER - ANIRUDH',
+    "DUM MASALA - THAMAN",
+    'CAPTAIN MILLER - GVP',
+    "SOORARAI POTTRU - GVP",
+    'VTK - AR RAHMAN',
   ];
   List<String> text1 = [
-    "Thangamagan-masstamil",
-    'Sakkar - MassTamilan.com',
-    'Sakkar - MassTamilan.com',
-    'Sakkar - MassTamilan.com',
-    "Thangamagan-masstamil",
+    "RAJINIKANTH",
+    'MAHESH BABU',
+    'DHANUSH',
+    'SURIYA',
+    "STR",
   ];
+
+  void _onPlayButtonClick(int index) {
+    if (index == 0) {
+      print('0');
+    } else if (index == 1) {
+      print('1');
+    } else if (index == 2) {
+      print('2');
+    } else if (index == 3) {
+      print("3");
+    } else if (index == 4) {
+      print("4");
+    }
+
+    // Add your logic here for when the play button is clicked
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -241,24 +131,37 @@ class _SearchState extends State<Search> {
             child: ListView.builder(
               itemCount: text.length,
               itemBuilder: (context, index) {
+                // Define the color for the play icon based on index
+                Color playIconColor;
+                if (index == 0) {
+                  playIconColor = Colors.white; // Color for the first tile
+                } else if (index == 1) {
+                  playIconColor = Colors.white; // Color for the second tile
+                } else if (index == 2) {
+                  playIconColor = Colors.white; // Color for the third tile
+                } else if (index == 3) {
+                  playIconColor = Colors.white; // No color for others
+                } else {
+                  playIconColor = Colors.white;
+                }
+                ;
+
                 return Padding(
                   padding: EdgeInsets.only(top: 10),
                   child: SingleChildScrollView(
                     child: Column(
                       children: [
                         ListTile(
-                          // shape: BeveledRectangleBorder(
-                          //     side:
-                          //         BorderSide(color: Colors.green.withOpacity(0.9))),
                           leading: Container(
-                            width: 45,
-                            height: 45,
+                            width: 55,
+                            height: 55,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                             ),
                             child: Image.asset(
                               photos[index],
-                              color: Colors.white,
+                              fit: BoxFit.cover,
+                              // color: Colors.white,
                             ),
                           ),
                           title: Text(
@@ -267,8 +170,21 @@ class _SearchState extends State<Search> {
                           ),
                           subtitle: Text(
                             text1[index],
-                            style: TextStyle(color: Colors.white),
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
                           ),
+                          trailing: index < 5
+                              ? IconButton(
+                                  icon: Icon(
+                                    Icons.play_circle,
+                                    color: playIconColor,
+                                  ),
+                                  onPressed: () {
+                                    _onPlayButtonClick(index);
+                                  },
+                                )
+                              : null,
                         ),
                         Divider(
                           height: 10,
