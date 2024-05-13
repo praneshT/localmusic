@@ -15,6 +15,15 @@ class _ALLSONGState extends State<ALLSONG> {
       appBar: AppBar(
         backgroundColor: Colors.black,
         centerTitle: true,
+        leading: IconButton(
+          icon: Icon(
+            Icons.arrow_back_ios,
+            color: Colors.white,
+          ),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
         title: Text(
           '',
           style: TextStyle(fontSize: 18, color: Colors.white),
