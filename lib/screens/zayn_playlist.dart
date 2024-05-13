@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
 class ZAYN extends StatefulWidget {
@@ -8,6 +9,8 @@ class ZAYN extends StatefulWidget {
 }
 
 class _ZAYNState extends State<ZAYN> {
+  final player = AudioPlayer();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -72,6 +75,7 @@ class _ZAYNState extends State<ZAYN> {
                   color: Colors.white,
                 ),
                 onPressed: () {
+                  player.play(AssetSource('audio/dusk_till_dawn.mp3'));
                   // Add your play functionality here
                 },
               ),
