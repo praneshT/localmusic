@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:localmusic/Search/Popular.dart';
+import 'package:localmusic/screens/all_artist.dart';
+import 'package:localmusic/screens/all_song.dart';
 
 class Search extends StatefulWidget {
   const Search({Key? key});
@@ -43,8 +45,6 @@ class _SearchState extends State<Search> {
     } else if (index == 4) {
       print("4");
     }
-
-    // Add your logic here for when the play button is clicked
   }
 
   @override
@@ -91,7 +91,12 @@ class _SearchState extends State<Search> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 OutlinedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ALLSONG()),
+                    );
+                  },
                   child: Text(
                     "All",
                     style: TextStyle(color: Colors.white),
@@ -99,7 +104,12 @@ class _SearchState extends State<Search> {
                   clipBehavior: Clip.hardEdge,
                 ),
                 OutlinedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ALLARTIST()),
+                    );
+                  },
                   child: Text(
                     "Artist",
                     style: TextStyle(color: Colors.white),
@@ -131,16 +141,15 @@ class _SearchState extends State<Search> {
             child: ListView.builder(
               itemCount: text.length,
               itemBuilder: (context, index) {
-                // Define the color for the play icon based on index
                 Color playIconColor;
                 if (index == 0) {
-                  playIconColor = Colors.white; // Color for the first tile
+                  playIconColor = Colors.white;
                 } else if (index == 1) {
-                  playIconColor = Colors.white; // Color for the second tile
+                  playIconColor = Colors.white;
                 } else if (index == 2) {
-                  playIconColor = Colors.white; // Color for the third tile
+                  playIconColor = Colors.white;
                 } else if (index == 3) {
-                  playIconColor = Colors.white; // No color for others
+                  playIconColor = Colors.white;
                 } else {
                   playIconColor = Colors.white;
                 }

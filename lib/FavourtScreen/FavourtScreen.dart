@@ -16,6 +16,14 @@ class _FavouriteState extends State<Favourite> {
   bool isFavorite6 = false;
   bool isFavorite7 = false;
 
+  int currentPlayIndex = 0;
+  // int currentPlayIndex2 = 0;
+  // int currentPlayIndex3 = 0;
+  // int currentPlayIndex4 = 0;
+  // int currentPlayIndex5 = 0;
+  // int currentPlayIndex6 = 0;
+  // int currentPlayIndex7 = 0;
+
   void toggleFavorite1() {
     setState(() {
       isFavorite1 = !isFavorite1;
@@ -57,6 +65,49 @@ class _FavouriteState extends State<Favourite> {
       isFavorite7 = !isFavorite7;
     });
   }
+
+  void playSong(int index) {
+    setState(() {
+      currentPlayIndex = index;
+    });
+    print(currentPlayIndex);
+  }
+  // void playSong(int index) {
+  //   setState(() {
+  //     currentPlayIndex2 = index;
+  //   });
+  //   print(currentPlayIndex2);
+  // }
+  // void playSong(int index) {
+  //   setState(() {
+  //     currentPlayIndex3 = index;
+  //   });
+  //   print(currentPlayIndex3);
+  // }
+  // void playSong(int index) {
+  //   setState(() {
+  //     currentPlayIndex4 = index;
+  //   });
+  //   print(currentPlayIndex4);
+  // }
+  // void playSong(int index) {
+  //   setState(() {
+  //     currentPlayIndex5= index;
+  //   });
+  //   print(currentPlayIndex5);
+  // }
+  // void playSong(int index) {
+  //   setState(() {
+  //     currentPlayIndex6 = index;
+  //   });
+  //   print(currentPlayIndex6);
+  // }
+  // void playSong(int index) {
+  //   setState(() {
+  //     currentPlayIndex7= index;
+  //   });
+  //   print(currentPlayIndex7);
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -106,12 +157,21 @@ class _FavouriteState extends State<Favourite> {
                   color: Colors.white.withOpacity(0.7),
                 ), // Lower opacity value
               ),
-              trailing: GestureDetector(
-                onTap: toggleFavorite1,
-                child: Icon(
-                  isFavorite1 ? Icons.favorite : Icons.favorite_border,
-                  color: isFavorite1 ? Colors.pink : null,
-                ),
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  IconButton(
+                    onPressed: () => playSong(1),
+                    icon: Icon(Icons.play_circle, color: Colors.white),
+                  ),
+                  GestureDetector(
+                    onTap: toggleFavorite1,
+                    child: Icon(
+                      isFavorite1 ? Icons.favorite : Icons.favorite_border,
+                      color: isFavorite1 ? Colors.pink : null,
+                    ),
+                  ),
+                ],
               ),
             ),
             Divider(
@@ -147,12 +207,21 @@ class _FavouriteState extends State<Favourite> {
                     color:
                         Colors.white.withOpacity(0.7)), // Lower opacity value
               ),
-              trailing: GestureDetector(
-                onTap: toggleFavorite2,
-                child: Icon(
-                  isFavorite2 ? Icons.favorite : Icons.favorite_border,
-                  color: isFavorite2 ? Colors.pink : null,
-                ),
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  IconButton(
+                    onPressed: () => playSong(2),
+                    icon: Icon(Icons.play_circle, color: Colors.white),
+                  ),
+                  GestureDetector(
+                    onTap: toggleFavorite2,
+                    child: Icon(
+                      isFavorite2 ? Icons.favorite : Icons.favorite_border,
+                      color: isFavorite2 ? Colors.pink : null,
+                    ),
+                  ),
+                ],
               ),
             ),
             Divider(
@@ -188,12 +257,21 @@ class _FavouriteState extends State<Favourite> {
                     color:
                         Colors.white.withOpacity(0.7)), // Lower opacity value
               ),
-              trailing: GestureDetector(
-                onTap: toggleFavorite3,
-                child: Icon(
-                  isFavorite3 ? Icons.favorite : Icons.favorite_border,
-                  color: isFavorite3 ? Colors.pink : null,
-                ),
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  IconButton(
+                    onPressed: () => playSong(3),
+                    icon: Icon(Icons.play_circle, color: Colors.white),
+                  ),
+                  GestureDetector(
+                    onTap: toggleFavorite3,
+                    child: Icon(
+                      isFavorite3 ? Icons.favorite : Icons.favorite_border,
+                      color: isFavorite3 ? Colors.pink : null,
+                    ),
+                  ),
+                ],
               ),
             ),
             Divider(
@@ -226,12 +304,21 @@ class _FavouriteState extends State<Favourite> {
                     color:
                         Colors.white.withOpacity(0.7)), // Lower opacity value
               ),
-              trailing: GestureDetector(
-                onTap: toggleFavorite4,
-                child: Icon(
-                  isFavorite4 ? Icons.favorite : Icons.favorite_border,
-                  color: isFavorite4 ? Colors.pink : null,
-                ),
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  IconButton(
+                    onPressed: () => playSong(4),
+                    icon: Icon(Icons.play_circle, color: Colors.white),
+                  ),
+                  GestureDetector(
+                    onTap: toggleFavorite4,
+                    child: Icon(
+                      isFavorite4 ? Icons.favorite : Icons.favorite_border,
+                      color: isFavorite4 ? Colors.pink : null,
+                    ),
+                  ),
+                ],
               ),
             ),
             Divider(
@@ -267,12 +354,21 @@ class _FavouriteState extends State<Favourite> {
                     color:
                         Colors.white.withOpacity(0.7)), // Lower opacity value
               ),
-              trailing: GestureDetector(
-                onTap: toggleFavorite5,
-                child: Icon(
-                  isFavorite5 ? Icons.favorite : Icons.favorite_border,
-                  color: isFavorite5 ? Colors.pink : null,
-                ),
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  IconButton(
+                    onPressed: () => playSong(5),
+                    icon: Icon(Icons.play_circle, color: Colors.white),
+                  ),
+                  GestureDetector(
+                    onTap: toggleFavorite5,
+                    child: Icon(
+                      isFavorite5 ? Icons.favorite : Icons.favorite_border,
+                      color: isFavorite5 ? Colors.pink : null,
+                    ),
+                  ),
+                ],
               ),
             ),
             Divider(
@@ -308,12 +404,21 @@ class _FavouriteState extends State<Favourite> {
                     color:
                         Colors.white.withOpacity(0.7)), // Lower opacity value
               ),
-              trailing: GestureDetector(
-                onTap: toggleFavorite6,
-                child: Icon(
-                  isFavorite6 ? Icons.favorite : Icons.favorite_border,
-                  color: isFavorite6 ? Colors.pink : null,
-                ),
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  IconButton(
+                    onPressed: () => playSong(6),
+                    icon: Icon(Icons.play_circle, color: Colors.white),
+                  ),
+                  GestureDetector(
+                    onTap: toggleFavorite6,
+                    child: Icon(
+                      isFavorite6 ? Icons.favorite : Icons.favorite_border,
+                      color: isFavorite6 ? Colors.pink : null,
+                    ),
+                  ),
+                ],
               ),
             ),
             Divider(
@@ -346,12 +451,21 @@ class _FavouriteState extends State<Favourite> {
                     color:
                         Colors.white.withOpacity(0.7)), // Lower opacity value
               ),
-              trailing: GestureDetector(
-                onTap: toggleFavorite7,
-                child: Icon(
-                  isFavorite7 ? Icons.favorite : Icons.favorite_border,
-                  color: isFavorite7 ? Colors.pink : null,
-                ),
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  IconButton(
+                    onPressed: () => playSong(7),
+                    icon: Icon(Icons.play_circle, color: Colors.white),
+                  ),
+                  GestureDetector(
+                    onTap: toggleFavorite7,
+                    child: Icon(
+                      isFavorite7 ? Icons.favorite : Icons.favorite_border,
+                      color: isFavorite7 ? Colors.pink : null,
+                    ),
+                  ),
+                ],
               ),
             ),
             Divider(
