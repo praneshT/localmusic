@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:localmusic/SETTINGS/PasswordChange.dart';
 
 class Popular extends StatefulWidget {
   const Popular({Key? key}) : super(key: key);
@@ -66,34 +67,282 @@ class _PopularState extends State<Popular> {
           },
         ),
       ),
-      body: ListView.builder(
-        itemCount: test.length,
-        itemBuilder: (context, index) {
-          return Padding(
-            padding: const EdgeInsets.only(top: 10),
-            child: Column(
-              children: [
-                ListTile(
-                  leading: CircleAvatar(
-                    radius: 30,
-                    backgroundImage: AssetImage(test[index]),
-                  ),
-                  iconColor: Colors.white,
-                  title: Text(
-                    text[index],
-                    style: TextStyle(
-                        color: Colors.white, fontWeight: FontWeight.bold),
-                  ),
-                  trailing: icon[index],
-                ),
-                Divider(
-                  height: 10,
-                  thickness: 0.4,
-                )
-              ],
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: ListView(
+          children: [
+            ListTile(
+              leading: CircleAvatar(
+                radius: 30,
+                backgroundImage: AssetImage("assets/images/dhnaushp.jpg"),
+              ),
+              title: Text(
+                'DHANUSH',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                    color: Colors.white),
+              ),
+              trailing: IconButton(
+                icon: Icon(Icons.keyboard_double_arrow_right),
+                color: Colors.white,
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => ChangePassword(),
+                  ));
+                },
+              ),
+              iconColor: Colors.green,
             ),
-          );
-        },
+            Divider(
+              height: 10,
+              thickness: 0.7,
+            ),
+            ListTile(
+              leading: CircleAvatar(
+                radius: 30,
+                backgroundImage: AssetImage("assets/images/anifa1.jpeg"),
+              ),
+              title: Text(
+                'ANIRUDH RAVICHANDER',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                    color: Colors.white),
+              ),
+              trailing: IconButton(
+                icon: Icon(Icons.keyboard_double_arrow_right),
+                color: Colors.white,
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => ChangePassword(),
+                  ));
+                },
+              ),
+              iconColor: Colors.green,
+            ),
+            Divider(
+              height: 10,
+              thickness: 0.7,
+            ),
+            ListTile(
+              leading: CircleAvatar(
+                radius: 30,
+                backgroundImage: AssetImage("assets/images/harrisp.webp"),
+              ),
+              title: Text(
+                'HARRIS JAYARAJ',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                    color: Colors.white),
+              ),
+              trailing: IconButton(
+                icon: Icon(Icons.keyboard_double_arrow_right),
+                color: Colors.white,
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => ChangePassword(),
+                  ));
+                },
+              ),
+              iconColor: Colors.green,
+            ),
+            Divider(
+              height: 10,
+              thickness: 0.7,
+            ),
+            ListTile(
+              leading: CircleAvatar(
+                radius: 30,
+                backgroundImage: AssetImage("assets/images/ilayap.jpg"),
+              ),
+              title: Text(
+                "ILAYARAJA",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                    color: Colors.white),
+              ),
+              trailing: IconButton(
+                icon: Icon(Icons.keyboard_double_arrow_right),
+                color: Colors.white,
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => ChangePassword(),
+                  ));
+                },
+              ),
+              iconColor: Colors.green,
+            ),
+            Divider(
+              height: 10,
+              thickness: 0.7,
+            ),
+            ListTile(
+              leading: CircleAvatar(
+                radius: 30,
+                backgroundImage: AssetImage("assets/images/gvp.jpg"),
+              ),
+              title: Text(
+                "GV PRAKASH",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                    color: Colors.white),
+              ),
+              trailing: IconButton(
+                icon: Icon(Icons.keyboard_double_arrow_right),
+                color: Colors.white,
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => ChangePassword(),
+                  ));
+                },
+              ),
+              iconColor: Colors.green,
+            ),
+            Divider(
+              height: 10,
+              thickness: 0.7,
+            ),
+            ListTile(
+              leading: CircleAvatar(
+                radius: 30,
+                backgroundImage: AssetImage("assets/images/arrp.jpg"),
+              ),
+              title: Text(
+                'AR RAHMAN',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                    color: Colors.white),
+              ),
+              trailing: IconButton(
+                icon: Icon(Icons.keyboard_double_arrow_right),
+                color: Colors.white,
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => ChangePassword(),
+                  ));
+                },
+              ),
+              iconColor: Colors.green,
+            ),
+            Divider(
+              height: 10,
+              thickness: 0.7,
+            ),
+            ListTile(
+              leading: CircleAvatar(
+                radius: 30,
+                backgroundImage: AssetImage("assets/images/yuvanp.jpg"),
+              ),
+              title: Text(
+                'YUVAN SHANKAR ',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                    color: Colors.white),
+              ),
+              trailing: IconButton(
+                icon: Icon(Icons.keyboard_double_arrow_right),
+                color: Colors.white,
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => ChangePassword(),
+                  ));
+                },
+              ),
+              iconColor: Colors.green,
+            ),
+            Divider(
+              height: 10,
+              thickness: 0.7,
+            ),
+            ListTile(
+              leading: CircleAvatar(
+                radius: 30,
+                backgroundImage: AssetImage("assets/images/dsp.jpg"),
+              ),
+              title: Text(
+                'DSP',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                    color: Colors.white),
+              ),
+              trailing: IconButton(
+                icon: Icon(Icons.keyboard_double_arrow_right),
+                color: Colors.white,
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => ChangePassword(),
+                  ));
+                },
+              ),
+              iconColor: Colors.green,
+            ),
+            Divider(
+              height: 10,
+              thickness: 0.7,
+            ),
+            ListTile(
+              leading: CircleAvatar(
+                radius: 30,
+                backgroundImage: AssetImage("assets/images/thamanp.jpg"),
+              ),
+              title: Text(
+                "THAMAN",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                    color: Colors.white),
+              ),
+              trailing: IconButton(
+                icon: Icon(Icons.keyboard_double_arrow_right),
+                color: Colors.white,
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => ChangePassword(),
+                  ));
+                },
+              ),
+              iconColor: Colors.green,
+            ),
+            Divider(
+              height: 10,
+              thickness: 0.7,
+            ),
+            ListTile(
+              leading: CircleAvatar(
+                radius: 30,
+                backgroundImage: AssetImage("assets/images/thamanp.jpg"),
+              ),
+              title: Text(
+                "qasxdf",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                    color: Colors.white),
+              ),
+              trailing: IconButton(
+                icon: Icon(Icons.keyboard_double_arrow_right),
+                color: Colors.white,
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => ChangePassword(),
+                  ));
+                },
+              ),
+              iconColor: Colors.green,
+            ),
+            Divider(
+              height: 10,
+              thickness: 0.7,
+            ),
+          ],
+        ),
       ),
     );
   }
