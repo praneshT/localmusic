@@ -22,7 +22,7 @@ class SEEALL extends StatelessWidget {
     'EMINEM',
     'SNOOP DOGG',
     '2PAC',
-    'XXXtentacion'
+    'XXXTENTACION'
   ];
 
   @override
@@ -41,6 +41,7 @@ class SEEALL extends StatelessWidget {
         ),
       ),
       body: Container(
+        color: Colors.black,
         padding: EdgeInsets.all(12.0),
         child: GridView.builder(
           itemCount: images.length,
@@ -108,7 +109,7 @@ class SEEALL extends StatelessWidget {
                     singer[index],
                     style: TextStyle(
                       fontSize: 13,
-                      color: Colors.black,
+                      color: Colors.white,
                       fontWeight: FontWeight.bold,
                     ),
                   ),

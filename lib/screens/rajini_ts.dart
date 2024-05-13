@@ -1,74 +1,73 @@
 import 'package:flutter/material.dart';
 
-class SNOOP extends StatefulWidget {
-  const SNOOP({super.key});
+class RAJINISONGS extends StatefulWidget {
+  const RAJINISONGS({super.key});
 
   @override
-  State<SNOOP> createState() => _SNOOPState();
+  State<RAJINISONGS> createState() => _RAJINISONGSState();
 }
 
-class _SNOOPState extends State<SNOOP> {
+class _RAJINISONGSState extends State<RAJINISONGS> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        backgroundColor: Colors.green[400],
+        backgroundColor: Colors.black,
         leading: Icon(
           Icons.arrow_back_ios,
           color: Colors.white,
         ),
         title: Text(
-          'SNOOP SONGS',
+          'RAJINI SONGS',
           style: TextStyle(fontSize: 18, color: Colors.white),
         ),
-        centerTitle: true,
+        centerTitle: true, // Center align the title
       ),
       body: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(8.0), // Add padding to the ListView
         child: ListView(
           children: [
-            ListTile(
-              title: Image.asset(
-                'assets/images/snoop.webp',
-                height: 200,
-                width: 200,
-              ),
-            ),
             ListTile(
               leading: Container(
                 width: 45.0,
                 height: 45.0,
                 decoration: BoxDecoration(
+                  color: Color.fromARGB(255, 25, 20, 45),
                   borderRadius: BorderRadius.all(
                     Radius.circular(10),
                   ),
                 ),
                 child: Center(
-                  child: Image(
-                    image: AssetImage("assets/images/snoopmusic.jpg"),
-                  ),
+                  child:
+                      Image(image: AssetImage("assets/images/rajini_ts1.jpg")),
                 ),
               ),
               title: Text(
-                'Gin and Juice',
+                'KABALI- SANTHOSH',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'SNOOP',
+                'RAJINI',
                 style: TextStyle(
-                  fontSize: 14,
-                  color: Colors.white.withOpacity(0.7),
-                ),
+                    fontSize: 14,
+                    color:
+                        Colors.white.withOpacity(0.7)), // Lower opacity value
               ),
-              trailing: IconButton(
-                icon: Icon(
-                  Icons.play_circle,
-                  color: Colors.white,
-                ),
-                onPressed: () {
-                  // Add your play functionality here
-                },
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  IconButton(
+                    icon: Icon(
+                      Icons.play_circle,
+                      color: Colors.white,
+                    ),
+                    onPressed: () {
+                      // Add your play functionality here
+                    },
+                  ),
+                  // Icon(Icons.favorite, color: Colors.pink),
+                ],
               ),
             ),
             Divider(
@@ -88,17 +87,17 @@ class _SNOOPState extends State<SNOOP> {
                 ),
                 child: Center(
                   child: Image(
-                    image: AssetImage("assets/images/snoopmusic.jpg"),
+                    image: AssetImage("assets/images/rajini_ts2.webp"),
                     fit: BoxFit.cover,
                   ),
                 ),
               ),
               title: Text(
-                'Beautiful ',
+                'PETTA-ANIRUDH',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'SNOOP',
+                'RAJINI',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -130,7 +129,7 @@ class _SNOOPState extends State<SNOOP> {
             ListTile(
               leading: Container(
                 width: 45.0,
-                height: 45.0,
+                height: 55.0,
                 decoration: BoxDecoration(
                   // color: Color.fromARGB(255, 25, 20, 45),
                   borderRadius: BorderRadius.all(
@@ -138,16 +137,66 @@ class _SNOOPState extends State<SNOOP> {
                   ),
                 ),
                 child: Center(
-                  child:
-                      Image(image: AssetImage("assets/images/snoopmusic.jpg")),
+                  child: Image(
+                    image: AssetImage("assets/images/rajini_ts3.jpg"),
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
               title: Text(
-                'Sensual Seduction',
+                'ANNAATTHE - IMMAM ',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'SNOOP',
+                'RAJINI',
+                style: TextStyle(
+                    fontSize: 14,
+                    color:
+                        Colors.white.withOpacity(0.7)), // Lower opacity value
+              ),
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  IconButton(
+                    icon: Icon(
+                      Icons.play_circle,
+                      color: Colors.white,
+                    ),
+                    onPressed: () {
+                      print("play");
+                      // Add your play functionality here
+                    },
+                  ),
+                  // Icon(Icons.favorite, color: Colors.pink),
+                ],
+              ),
+            ),
+            Divider(
+              height: 10,
+              thickness: 1,
+            ),
+            SizedBox(height: 15),
+            ListTile(
+              leading: Container(
+                width: 45.0,
+                height: 45.0,
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(255, 25, 20, 45),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(18),
+                  ),
+                ),
+                child: Center(
+                  child:
+                      Image(image: AssetImage("assets/images/rajini_ts4.jpeg")),
+                ),
+              ),
+              title: Text(
+                'SHIVAJI- AR RAHMAN',
+                style: TextStyle(fontSize: 14, color: Colors.white),
+              ),
+              subtitle: Text(
+                'RAJINI',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -179,22 +228,22 @@ class _SNOOPState extends State<SNOOP> {
                 width: 45.0,
                 height: 45.0,
                 decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 25, 20, 45),
+                  color: Color.fromARGB(255, 25, 20, 45),
                   borderRadius: BorderRadius.all(
                     Radius.circular(18),
                   ),
                 ),
                 child: Center(
                   child:
-                      Image(image: AssetImage("assets/images/snoopmusic.jpg")),
+                      Image(image: AssetImage("assets/images/rajini_ts5.jpg")),
                 ),
               ),
               title: Text(
-                'Still D.R.E.',
+                'DARBAR - ANIRUDH',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'SNOOP',
+                'RAJINI',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -226,22 +275,22 @@ class _SNOOPState extends State<SNOOP> {
                 width: 45.0,
                 height: 45.0,
                 decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 25, 20, 45),
+                  color: Color.fromARGB(255, 25, 20, 45),
                   borderRadius: BorderRadius.all(
                     Radius.circular(18),
                   ),
                 ),
                 child: Center(
                   child:
-                      Image(image: AssetImage("assets/images/snoopmusic.jpg")),
+                      Image(image: AssetImage("assets/images/rajini_ts6.jpg")),
                 ),
               ),
               title: Text(
-                'Doggy Dogg World',
+                'JAILER - ANIRUDH',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'SNOOP',
+                'RAJINI',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -267,54 +316,6 @@ class _SNOOPState extends State<SNOOP> {
               height: 10,
               thickness: 1,
             ),
-            SizedBox(height: 15),
-            ListTile(
-              leading: Container(
-                width: 45.0,
-                height: 45.0,
-                decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 25, 20, 45),
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(18),
-                  ),
-                ),
-                child: Center(
-                  child:
-                      Image(image: AssetImage("assets/images/snoopmusic.jpg")),
-                ),
-              ),
-              title: Text(
-                'Signs ',
-                style: TextStyle(fontSize: 14, color: Colors.white),
-              ),
-              subtitle: Text(
-                'SNOOP',
-                style: TextStyle(
-                    fontSize: 14,
-                    color:
-                        Colors.white.withOpacity(0.7)), // Lower opacity value
-              ),
-              trailing: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  IconButton(
-                    icon: Icon(
-                      Icons.play_circle,
-                      color: Colors.white,
-                    ),
-                    onPressed: () {
-                      // Add your play functionality here
-                    },
-                  ),
-                  // Icon(Icons.favorite, color: Colors.pink),
-                ],
-              ),
-            ),
-            Divider(
-              height: 10,
-              thickness: 1,
-            ),
-            // Your other ListTile widgets
           ],
         ),
       ),
