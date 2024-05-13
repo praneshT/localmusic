@@ -14,9 +14,14 @@ class _PACState extends State<PAC> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.green[400],
-        leading: Icon(
-          Icons.arrow_back_ios,
-          color: Colors.white,
+        leading: IconButton(
+          icon: Icon(
+            Icons.arrow_back_ios,
+            color: Colors.white,
+          ),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
         ),
         title: Text(
           'PAC SONGS',

@@ -14,9 +14,14 @@ class _RAJINISONGSState extends State<RAJINISONGS> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        leading: Icon(
-          Icons.arrow_back_ios,
-          color: Colors.white,
+        leading: IconButton(
+          icon: Icon(
+            Icons.arrow_back_ios,
+            color: Colors.white,
+          ),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
         ),
         title: Text(
           'RAJINI SONGS',
