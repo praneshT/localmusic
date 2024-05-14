@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:localmusic/SplashScreen/SplashScreen.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 
 AudioPlayer? player;
 void main() {
@@ -14,14 +15,18 @@ class MYAPP extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        textTheme: GoogleFonts.poppinsTextTheme(
-          Theme.of(context).textTheme,
-        ),
-      ),
-      debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+    return ResponsiveSizer(
+      builder: (context, orientation, screenType) {
+        return MaterialApp(
+          theme: ThemeData(
+            textTheme: GoogleFonts.poppinsTextTheme(
+              Theme.of(context).textTheme,
+            ),
+          ),
+          debugShowCheckedModeBanner: false,
+          home: SplashScreen(),
+        );
+      },
     );
   }
 }

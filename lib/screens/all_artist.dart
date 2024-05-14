@@ -10,6 +10,7 @@ import 'package:localmusic/Artist/Qasxdf.dart';
 import 'package:localmusic/Artist/SPB.dart';
 import 'package:localmusic/Artist/Thaman.dart';
 import 'package:localmusic/Artist/Yuvan.dart';
+import 'package:localmusic/musics/player/playerScreen.dart';
 
 class ALLARTIST extends StatefulWidget {
   const ALLARTIST({Key? key}) : super(key: key);
@@ -61,7 +62,7 @@ class _ALLARTISTState extends State<ALLARTIST> {
                 color: Colors.white,
                 onPressed: () {
                   Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => SPB(),
+                    builder: (context) => PlayerScreen(),
                   ));
                 },
               ),

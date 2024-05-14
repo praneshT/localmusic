@@ -42,6 +42,7 @@ dependencies:
   glass: ^2.0.0+1
   carousel_slider: ^4.2.1
   just_audio: ^0.9.37
+  responsive_sizer: ^3.3.1
 
 dev_dependencies:
   flutter_test:
