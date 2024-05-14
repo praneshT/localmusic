@@ -1,103 +1,74 @@
-import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
-class ZAYN extends StatefulWidget {
-  const ZAYN({super.key});
+class PAWANSONGS extends StatefulWidget {
+  const PAWANSONGS({super.key});
 
   @override
-  State<ZAYN> createState() => _ZAYNState();
+  State<PAWANSONGS> createState() => _PAWANSONGSState();
 }
 
-class _ZAYNState extends State<ZAYN> {
-  bool first_song = false;
-
-  final player = AudioPlayer();
-
+class _PAWANSONGSState extends State<PAWANSONGS> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        backgroundColor: Colors.green[400],
-        leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back_ios,
-            color: Colors.white,
-          ),
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
+        backgroundColor: Colors.black,
+        leading: Icon(
+          Icons.arrow_back_ios,
+          color: Colors.white,
         ),
         title: Text(
-          'ZAYN SONGS',
+          'PAWAN KALYAN SONGS',
           style: TextStyle(fontSize: 18, color: Colors.white),
         ),
-        centerTitle: true,
+        centerTitle: true, // Center align the title
       ),
       body: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(8.0), // Add padding to the ListView
         child: ListView(
           children: [
-            ListTile(
-              title: Image.asset(
-                'assets/images/zayn2.jpg',
-                height: 200,
-                width: 200,
-              ),
-            ),
             ListTile(
               leading: Container(
                 width: 45.0,
                 height: 45.0,
                 decoration: BoxDecoration(
+                  // color: Color.fromARGB(255, 25, 20, 45),
                   borderRadius: BorderRadius.all(
                     Radius.circular(10),
                   ),
                 ),
                 child: Center(
-                  child: Image(
-                    image: AssetImage("assets/images/zayn.jpg"),
-                  ),
+                  child:
+                      Image(image: AssetImage("assets/images/pawan_ts1.jpg")),
                 ),
               ),
               title: Text(
-                'Dusk Till Dawn (feat. Sia)',
+                'GABBAR SINGH  - DSP',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'ZAYN',
+                'PAWAN KALYAN',
                 style: TextStyle(
-                  fontSize: 14,
-                  color: Colors.white.withOpacity(0.7),
-                ),
+                    fontSize: 14,
+                    color:
+                        Colors.white.withOpacity(0.7)), // Lower opacity value
               ),
-              trailing: first_song == false
-                  ? IconButton(
-                      icon: Icon(
-                        Icons.play_circle,
-                        color: Colors.white,
-                      ),
-                      onPressed: () {
-                        setState(() {
-                          first_song = true;
-                        });
-                        player.play(AssetSource('audio/dusk_till_dawn.mp3'));
-                        // Add your play functionality here
-                      },
-                    )
-                  : IconButton(
-                      icon: Icon(
-                        Icons.pause,
-                        color: Colors.white,
-                      ),
-                      onPressed: () {
-                        setState(() {
-                          first_song = false;
-                        });
-                        player.stop();
-                        // Add your play functionality here
-                      },
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  IconButton(
+                    icon: Icon(
+                      Icons.play_circle,
+                      color: Colors.white,
                     ),
+                    onPressed: () {
+                      // Add your play functionality here
+                    },
+                  ),
+                  // Icon(Icons.favorite, color: Colors.pink),
+                ],
+              ),
             ),
             Divider(
               height: 10,
@@ -116,17 +87,17 @@ class _ZAYNState extends State<ZAYN> {
                 ),
                 child: Center(
                   child: Image(
-                    image: AssetImage("assets/images/zayn.jpg"),
+                    image: AssetImage("assets/images/pawan_ts2.jpg"),
                     fit: BoxFit.cover,
                   ),
                 ),
               ),
               title: Text(
-                'Let Me',
+                'JALSA -  DSP',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'ZAYN',
+                'PAWAN KALYAN',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -158,6 +129,56 @@ class _ZAYNState extends State<ZAYN> {
             ListTile(
               leading: Container(
                 width: 45.0,
+                height: 55.0,
+                decoration: BoxDecoration(
+                  // color: Color.fromARGB(255, 25, 20, 45),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(18),
+                  ),
+                ),
+                child: Center(
+                  child: Image(
+                    image: AssetImage("assets/images/pawan_ts3.jpg"),
+                    fit: BoxFit.fill,
+                  ),
+                ),
+              ),
+              title: Text(
+                'GOPALA - ANOOP RUBENS',
+                style: TextStyle(fontSize: 14, color: Colors.white),
+              ),
+              subtitle: Text(
+                'PAWAN KALYAN',
+                style: TextStyle(
+                    fontSize: 14,
+                    color:
+                        Colors.white.withOpacity(0.7)), // Lower opacity value
+              ),
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  IconButton(
+                    icon: Icon(
+                      Icons.play_circle,
+                      color: Colors.white,
+                    ),
+                    onPressed: () {
+                      print("play");
+                      // Add your play functionality here
+                    },
+                  ),
+                  // Icon(Icons.favorite, color: Colors.pink),
+                ],
+              ),
+            ),
+            Divider(
+              height: 10,
+              thickness: 1,
+            ),
+            SizedBox(height: 15),
+            ListTile(
+              leading: Container(
+                width: 45.0,
                 height: 45.0,
                 decoration: BoxDecoration(
                   // color: Color.fromARGB(255, 25, 20, 45),
@@ -166,15 +187,16 @@ class _ZAYNState extends State<ZAYN> {
                   ),
                 ),
                 child: Center(
-                  child: Image(image: AssetImage("assets/images/zayn.jpg")),
+                  child:
+                      Image(image: AssetImage("assets/images/pawan_ts4.jpg")),
                 ),
               ),
               title: Text(
-                'Like I Would',
+                'KATAMARAYUDU -  ANUP',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'ZAYN',
+                'PAWAN KALYAN',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -212,15 +234,16 @@ class _ZAYNState extends State<ZAYN> {
                   ),
                 ),
                 child: Center(
-                  child: Image(image: AssetImage("assets/images/zayn.jpg")),
+                  child:
+                      Image(image: AssetImage("assets/images/pawan_ts5.jpg")),
                 ),
               ),
               title: Text(
-                'Good Years',
+                'SARDAAR GABBAR SINGH - DSP',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'ZAYN',
+                'PAWAN KALYAN',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -252,21 +275,22 @@ class _ZAYNState extends State<ZAYN> {
                 width: 45.0,
                 height: 45.0,
                 decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 25, 20, 45),
+                  color: Color.fromARGB(255, 25, 20, 45),
                   borderRadius: BorderRadius.all(
                     Radius.circular(18),
                   ),
                 ),
                 child: Center(
-                  child: Image(image: AssetImage("assets/images/zayn.jpg")),
+                  child:
+                      Image(image: AssetImage("assets/images/pawan_ts6.webp")),
                 ),
               ),
               title: Text(
-                'Entertainer',
+                'BADRI  - RAMANA GOGULA',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'ZAYN',
+                'PAWAN KALYAN',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -292,53 +316,6 @@ class _ZAYNState extends State<ZAYN> {
               height: 10,
               thickness: 1,
             ),
-            SizedBox(height: 15),
-            ListTile(
-              leading: Container(
-                width: 45.0,
-                height: 45.0,
-                decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 25, 20, 45),
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(18),
-                  ),
-                ),
-                child: Center(
-                  child: Image(image: AssetImage("assets/images/zayn.jpg")),
-                ),
-              ),
-              title: Text(
-                'Too Much',
-                style: TextStyle(fontSize: 14, color: Colors.white),
-              ),
-              subtitle: Text(
-                'ZAYN',
-                style: TextStyle(
-                    fontSize: 14,
-                    color:
-                        Colors.white.withOpacity(0.7)), // Lower opacity value
-              ),
-              trailing: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  IconButton(
-                    icon: Icon(
-                      Icons.play_circle,
-                      color: Colors.white,
-                    ),
-                    onPressed: () {
-                      // Add your play functionality here
-                    },
-                  ),
-                  // Icon(Icons.favorite, color: Colors.pink),
-                ],
-              ),
-            ),
-            Divider(
-              height: 10,
-              thickness: 1,
-            ),
-            // Your other ListTile widgets
           ],
         ),
       ),
