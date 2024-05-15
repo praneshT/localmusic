@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class NAGASONGS extends StatefulWidget {
-  const NAGASONGS({super.key});
+class RAMCHARANSONGS extends StatefulWidget {
+  const RAMCHARANSONGS({super.key});
 
   @override
-  State<NAGASONGS> createState() => _NAGASONGSState();
+  State<RAMCHARANSONGS> createState() => _RAMCHARANSONGSState();
 }
 
-class _NAGASONGSState extends State<NAGASONGS> {
+class _RAMCHARANSONGSState extends State<RAMCHARANSONGS> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,15 +39,15 @@ class _NAGASONGSState extends State<NAGASONGS> {
                   ),
                 ),
                 child: Center(
-                  child: Image(image: AssetImage("assets/images/naga_ts1.jpg")),
+                  child: Image(image: AssetImage("assets/images/ram_ts1.jpg")),
                 ),
               ),
               title: Text(
-                'ANNIYAN  - HARRIS JAYARAJ',
+                'MAGADHEERA  -  Keeravani',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'NAGARJUNA',
+                'RAMCHARAN',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -86,17 +86,17 @@ class _NAGASONGSState extends State<NAGASONGS> {
                 ),
                 child: Center(
                   child: Image(
-                    image: AssetImage("assets/images/naga_ts2.jpg"),
+                    image: AssetImage("assets/images/ram_ts2.jpeg"),
                     fit: BoxFit.cover,
                   ),
                 ),
               ),
               title: Text(
-                'MASS -  DSP',
+                'RANGASTHALAM -  DSP',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'NAGARJUNA',
+                'RAMCHARAN',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -137,17 +137,17 @@ class _NAGASONGSState extends State<NAGASONGS> {
                 ),
                 child: Center(
                   child: Image(
-                    image: AssetImage("assets/images/naga_ts3.jpg"),
+                    image: AssetImage("assets/images/ram_ts3.jpg"),
                     fit: BoxFit.fill,
                   ),
                 ),
               ),
               title: Text(
-                'SHIVA- ILAIYARAAJA',
+                'ORANGE - Harris Jayaraj',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'NAGARJUNA',
+                'RAMCHARAN',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -186,15 +186,15 @@ class _NAGASONGSState extends State<NAGASONGS> {
                   ),
                 ),
                 child: Center(
-                  child: Image(image: AssetImage("assets/images/naga_ts4.jpg")),
+                  child: Image(image: AssetImage("assets/images/ram_ts4.jpg")),
                 ),
               ),
               title: Text(
-                'SHIRDI SAI  -  KEERAVAN',
+                'YEVADU  -  DSP',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'NAGARJUNA',
+                'RAMCHARAN',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -232,16 +232,15 @@ class _NAGASONGSState extends State<NAGASONGS> {
                   ),
                 ),
                 child: Center(
-                  child:
-                      Image(image: AssetImage("assets/images/naga_ts5.jpeg")),
+                  child: Image(image: AssetImage("assets/images/ram_ts5.jpeg")),
                 ),
               ),
               title: Text(
-                'KING - DSP',
+                'NAAYAK  - Thaman',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'NAGARJUNA',
+                'RAMCHARAN',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -279,15 +278,15 @@ class _NAGASONGSState extends State<NAGASONGS> {
                   ),
                 ),
                 child: Center(
-                  child: Image(image: AssetImage("assets/images/naga_ts6.jpg")),
+                  child: Image(image: AssetImage("assets/images/ram_ts6.jpg")),
                 ),
               ),
               title: Text(
-                'DON -  RAGHU KUNCHE',
+                'RACHA  -  Mani Sharma',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'NAGARJUNA',
+                'RAMCHARAN',
                 style: TextStyle(
                     fontSize: 14,
                     color:

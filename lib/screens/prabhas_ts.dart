@@ -275,7 +275,7 @@ class _PRABHASSONGSState extends State<PRABHASSONGS> {
                 width: 45.0,
                 height: 45.0,
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 25, 20, 45),
+                  // color: Color.fromARGB(255, 25, 20, 45),
                   borderRadius: BorderRadius.all(
                     Radius.circular(18),
                   ),

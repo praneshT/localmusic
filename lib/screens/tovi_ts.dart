@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class NAGASONGS extends StatefulWidget {
-  const NAGASONGS({super.key});
+class TOVINOSONGS extends StatefulWidget {
+  const TOVINOSONGS({super.key});
 
   @override
-  State<NAGASONGS> createState() => _NAGASONGSState();
+  State<TOVINOSONGS> createState() => _TOVINOSONGSState();
 }
 
-class _NAGASONGSState extends State<NAGASONGS> {
+class _TOVINOSONGSState extends State<TOVINOSONGS> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +19,7 @@ class _NAGASONGSState extends State<NAGASONGS> {
           color: Colors.white,
         ),
         title: Text(
-          'NAGARJUNA SONGS',
+          'TOVINO SONGS',
           style: TextStyle(fontSize: 18, color: Colors.white),
         ),
         centerTitle: true, // Center align the title
@@ -39,15 +39,16 @@ class _NAGASONGSState extends State<NAGASONGS> {
                   ),
                 ),
                 child: Center(
-                  child: Image(image: AssetImage("assets/images/naga_ts1.jpg")),
+                  child:
+                      Image(image: AssetImage("assets/images/tovino_ts1.jpg")),
                 ),
               ),
               title: Text(
-                'ANNIYAN  - HARRIS JAYARAJ',
+                'MAYAANADHI  - REX VIJAYAN',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'NAGARJUNA',
+                'TOVINO',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -86,17 +87,17 @@ class _NAGASONGSState extends State<NAGASONGS> {
                 ),
                 child: Center(
                   child: Image(
-                    image: AssetImage("assets/images/naga_ts2.jpg"),
+                    image: AssetImage("assets/images/tovino_ts2.jpg"),
                     fit: BoxFit.cover,
                   ),
                 ),
               ),
               title: Text(
-                'MASS -  DSP',
+                'GUPPY- VISHNU VIJAY',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'NAGARJUNA',
+                'TOVINO',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -137,17 +138,17 @@ class _NAGASONGSState extends State<NAGASONGS> {
                 ),
                 child: Center(
                   child: Image(
-                    image: AssetImage("assets/images/naga_ts3.jpg"),
+                    image: AssetImage("assets/images/tovino_ts3.jpg"),
                     fit: BoxFit.fill,
                   ),
                 ),
               ),
               title: Text(
-                'SHIVA- ILAIYARAAJA',
+                'KALKI - JAKES BEJOY',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'NAGARJUNA',
+                'TOVINO',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -186,15 +187,16 @@ class _NAGASONGSState extends State<NAGASONGS> {
                   ),
                 ),
                 child: Center(
-                  child: Image(image: AssetImage("assets/images/naga_ts4.jpg")),
+                  child:
+                      Image(image: AssetImage("assets/images/tovino_ts4.jpg")),
                 ),
               ),
               title: Text(
-                'SHIRDI SAI  -  KEERAVAN',
+                'LUCIFER  - DEEPAK DEV',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'NAGARJUNA',
+                'TOVINO',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -233,15 +235,15 @@ class _NAGASONGSState extends State<NAGASONGS> {
                 ),
                 child: Center(
                   child:
-                      Image(image: AssetImage("assets/images/naga_ts5.jpeg")),
+                      Image(image: AssetImage("assets/images/tovino_ts5.jpeg")),
                 ),
               ),
               title: Text(
-                'KING - DSP',
+                'THEEVANDI - KAILAS MENON',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'NAGARJUNA',
+                'TOVINO',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -279,15 +281,16 @@ class _NAGASONGSState extends State<NAGASONGS> {
                   ),
                 ),
                 child: Center(
-                  child: Image(image: AssetImage("assets/images/naga_ts6.jpg")),
+                  child:
+                      Image(image: AssetImage("assets/images/tovino_ts6.jpg")),
                 ),
               ),
               title: Text(
-                'DON -  RAGHU KUNCHE',
+                'FORENSIC  -  JAKES BEJOY',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'NAGARJUNA',
+                'TOVINO',
                 style: TextStyle(
                     fontSize: 14,
                     color:

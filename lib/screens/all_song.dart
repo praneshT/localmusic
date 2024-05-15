@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:localmusic/screens/ajith_ts.dart';
 import 'package:localmusic/screens/dhanush_ts.dart';
+import 'package:localmusic/screens/dq_ts.dart';
+import 'package:localmusic/screens/fafa.dart';
 import 'package:localmusic/screens/mb_ts.dart';
 import 'package:localmusic/screens/naga_ts.dart';
 import 'package:localmusic/screens/pawan_ts.dart';
 import 'package:localmusic/screens/prabhas_ts.dart';
 import 'package:localmusic/screens/rajini_ts.dart';
+import 'package:localmusic/screens/ramcharan_ts.dart';
 import 'package:localmusic/screens/str_ts.dart';
 import 'package:localmusic/screens/suriya_ts.dart';
+import 'package:localmusic/screens/tovi_ts.dart';
 
 class ALLSONG extends StatefulWidget {
   const ALLSONG({super.key});
@@ -354,7 +358,13 @@ class _ALLSONGState extends State<ALLSONG> {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => RAMCHARANSONGS()),
+                        );
+                      },
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
@@ -397,7 +407,13 @@ class _ALLSONGState extends State<ALLSONG> {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => TOVINOSONGS()),
+                        );
+                      },
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
@@ -423,7 +439,12 @@ class _ALLSONGState extends State<ALLSONG> {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => FAFASONGS()),
+                        );
+                      },
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
@@ -448,7 +469,12 @@ class _ALLSONGState extends State<ALLSONG> {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => DQSONGS()),
+                        );
+                      },
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(

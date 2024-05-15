@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class NAGASONGS extends StatefulWidget {
-  const NAGASONGS({super.key});
+class DQSONGS extends StatefulWidget {
+  const DQSONGS({super.key});
 
   @override
-  State<NAGASONGS> createState() => _NAGASONGSState();
+  State<DQSONGS> createState() => _DQSONGSState();
 }
 
-class _NAGASONGSState extends State<NAGASONGS> {
+class _DQSONGSState extends State<DQSONGS> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +19,7 @@ class _NAGASONGSState extends State<NAGASONGS> {
           color: Colors.white,
         ),
         title: Text(
-          'NAGARJUNA SONGS',
+          'FAFA SONGS',
           style: TextStyle(fontSize: 18, color: Colors.white),
         ),
         centerTitle: true, // Center align the title
@@ -39,15 +39,16 @@ class _NAGASONGSState extends State<NAGASONGS> {
                   ),
                 ),
                 child: Center(
-                  child: Image(image: AssetImage("assets/images/naga_ts1.jpg")),
+                  child:
+                      Image(image: AssetImage("assets/images/tovino_ts1.jpg")),
                 ),
               ),
               title: Text(
-                'ANNIYAN  - HARRIS JAYARAJ',
+                'MAHESHINTE PRATHIKAARAM - BIJIBAL',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'NAGARJUNA',
+                'FAFA',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -86,17 +87,17 @@ class _NAGASONGSState extends State<NAGASONGS> {
                 ),
                 child: Center(
                   child: Image(
-                    image: AssetImage("assets/images/naga_ts2.jpg"),
+                    image: AssetImage("assets/images/tovino_ts2.jpg"),
                     fit: BoxFit.cover,
                   ),
                 ),
               ),
               title: Text(
-                'MASS -  DSP',
+                'THONDIMUTHALUM DRIKSAKSHIYUM -BIJIBAL',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'NAGARJUNA',
+                'FAFA',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -137,17 +138,17 @@ class _NAGASONGSState extends State<NAGASONGS> {
                 ),
                 child: Center(
                   child: Image(
-                    image: AssetImage("assets/images/naga_ts3.jpg"),
+                    image: AssetImage("assets/images/tovino_ts3.jpg"),
                     fit: BoxFit.fill,
                   ),
                 ),
               ),
               title: Text(
-                'SHIVA- ILAIYARAAJA',
+                'VARATHAN -  SUSHIN SHYAM',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'NAGARJUNA',
+                'FAFA',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -186,15 +187,16 @@ class _NAGASONGSState extends State<NAGASONGS> {
                   ),
                 ),
                 child: Center(
-                  child: Image(image: AssetImage("assets/images/naga_ts4.jpg")),
+                  child:
+                      Image(image: AssetImage("assets/images/tovino_ts4.jpg")),
                 ),
               ),
               title: Text(
-                'SHIRDI SAI  -  KEERAVAN',
+                'KUMBALANGI NIGHTS  - SUSHIN SHYAM',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'NAGARJUNA',
+                'FAFA',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -233,15 +235,15 @@ class _NAGASONGSState extends State<NAGASONGS> {
                 ),
                 child: Center(
                   child:
-                      Image(image: AssetImage("assets/images/naga_ts5.jpeg")),
+                      Image(image: AssetImage("assets/images/tovino_ts5.jpeg")),
                 ),
               ),
               title: Text(
-                'KING - DSP',
+                'TRANCE - JACKSON VIJAYAN',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'NAGARJUNA',
+                'FAFA',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -279,15 +281,15 @@ class _NAGASONGSState extends State<NAGASONGS> {
                   ),
                 ),
                 child: Center(
-                  child: Image(image: AssetImage("assets/images/naga_ts6.jpg")),
+                  child: Image(image: AssetImage("assets/images/fafa_ts6.jpg")),
                 ),
               ),
               title: Text(
-                'DON -  RAGHU KUNCHE',
+                'JOJI - JUSTIN VARGHESE',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'NAGARJUNA',
+                'FAFA',
                 style: TextStyle(
                     fontSize: 14,
                     color:
