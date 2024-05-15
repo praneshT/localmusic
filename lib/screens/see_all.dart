@@ -5,6 +5,7 @@ import 'package:localmusic/screens/mj_playlist.dart';
 import 'package:localmusic/screens/snoop_playlist.dart';
 import 'package:localmusic/screens/xxx_playlist.dart';
 import 'package:localmusic/screens/zayn_playlist.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 
 class SEEALL extends StatelessWidget {
   List<String> images = [
@@ -110,10 +111,13 @@ class SEEALL extends StatelessWidget {
                     child: Image.asset(
                       images[index],
                       fit: BoxFit.cover,
-                      height: 160,
-                      width: 200,
+                      height: 18.h,
+                      width: 60.w,
                     ),
                   ),
+                  // SizedBox(
+                  //   height: 1.h,
+                  // ),
                   Text(
                     singer[index],
                     style: TextStyle(

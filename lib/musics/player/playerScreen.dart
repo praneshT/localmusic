@@ -87,7 +87,7 @@ class _HomeScreenState extends State<PlayerScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const AudioInfo(),
-            SizedBox(height: 20.h),
+            SizedBox(height: 7.h),
             Slider(
               value: _position.inSeconds.toDouble(),
               onChanged: (value) async {
@@ -119,7 +119,7 @@ class _HomeScreenState extends State<PlayerScreen> {
                   },
                   child: Image.asset('assets/images/rewind1.png'),
                 ),
-                SizedBox(width: 10.w),
+                SizedBox(width: 15.w),
                 GestureDetector(
                   onTap: playPause,
                   child: Icon(
@@ -128,7 +128,7 @@ class _HomeScreenState extends State<PlayerScreen> {
                     size: 80,
                   ),
                 ),
-                SizedBox(width: 5.w),
+                SizedBox(width: 15.w),
                 InkWell(
                   onTap: () {
                     player.seek(Duration(seconds: _position.inSeconds + 10));

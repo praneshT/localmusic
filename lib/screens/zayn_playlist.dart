@@ -1,5 +1,6 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 
 class ZAYN extends StatefulWidget {
   const ZAYN({super.key});
@@ -41,14 +42,14 @@ class _ZAYNState extends State<ZAYN> {
             ListTile(
               title: Image.asset(
                 'assets/images/zayn2.jpg',
-                height: 200,
-                width: 200,
+                height: 20.h,
+                width: 80.w,
               ),
             ),
             ListTile(
               leading: Container(
-                width: 45.0,
-                height: 45.0,
+                width: 22.0.w,
+                height: 22.0.h,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(
                     Radius.circular(10),
@@ -100,14 +101,14 @@ class _ZAYNState extends State<ZAYN> {
                     ),
             ),
             Divider(
-              height: 10,
+              height: 2.h,
               thickness: 0.7,
             ),
-            SizedBox(height: 15),
+            SizedBox(height: 0.3.h),
             ListTile(
               leading: Container(
-                width: 45.0,
-                height: 45.0,
+                width: 22.w,
+                height: 22.h,
                 decoration: BoxDecoration(
                   // color: Color.fromARGB(255, 25, 20, 45),
                   borderRadius: BorderRadius.all(
@@ -149,16 +150,16 @@ class _ZAYNState extends State<ZAYN> {
               ),
             ),
             Divider(
-              height: 10,
+              height: 2.h,
               thickness: 1,
             ),
             SizedBox(
-              height: 15,
+              height: 0.5.h,
             ),
             ListTile(
               leading: Container(
-                width: 45.0,
-                height: 45.0,
+                width: 22.w,
+                height: 22.h,
                 decoration: BoxDecoration(
                   // color: Color.fromARGB(255, 25, 20, 45),
                   borderRadius: BorderRadius.all(
@@ -197,14 +198,14 @@ class _ZAYNState extends State<ZAYN> {
               ),
             ),
             Divider(
-              height: 10,
+              height: 0.5.h,
               thickness: 1,
             ),
-            SizedBox(height: 15),
+            SizedBox(height: 0.5.h),
             ListTile(
               leading: Container(
-                width: 45.0,
-                height: 45.0,
+                width: 22.w,
+                height: 22.h,
                 decoration: BoxDecoration(
                   // color: Color.fromARGB(255, 25, 20, 45),
                   borderRadius: BorderRadius.all(
@@ -243,14 +244,14 @@ class _ZAYNState extends State<ZAYN> {
               ),
             ),
             Divider(
-              height: 10,
+              height: 0.5.h,
               thickness: 1,
             ),
-            SizedBox(height: 15),
+            SizedBox(height: 0.5.h),
             ListTile(
               leading: Container(
-                width: 45.0,
-                height: 45.0,
+                width: 22.w,
+                height: 22.h,
                 decoration: BoxDecoration(
                   // color: Color.fromARGB(255, 25, 20, 45),
                   borderRadius: BorderRadius.all(
@@ -289,14 +290,14 @@ class _ZAYNState extends State<ZAYN> {
               ),
             ),
             Divider(
-              height: 10,
+              height: 0.5,
               thickness: 1,
             ),
             SizedBox(height: 15),
             ListTile(
               leading: Container(
-                width: 45.0,
-                height: 45.0,
+                width: 22.w,
+                height: 22.h,
                 decoration: BoxDecoration(
                   // color: Color.fromARGB(255, 25, 20, 45),
                   borderRadius: BorderRadius.all(
@@ -335,7 +336,7 @@ class _ZAYNState extends State<ZAYN> {
               ),
             ),
             Divider(
-              height: 10,
+              height: 0.5.h,
               thickness: 1,
             ),
             // Your other ListTile widgets

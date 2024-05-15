@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:localmusic/HomeScreen/BottomNavigationBar.dart';
 import 'package:localmusic/components/my_button.dart';
 import 'package:localmusic/components/my_text_field.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 
 class LOGINSCREEN extends StatefulWidget {
   const LOGINSCREEN({Key? key}) : super(key: key);
@@ -39,26 +40,26 @@ class _LOGINSCREENState extends State<LOGINSCREEN> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SizedBox(height: 40),
+              // SizedBox(height: 20.h),
               Image.asset(
                 'assets/images/radio_wave_beta.png',
                 color: Color.fromARGB(255, 10, 185, 121),
                 width: 300,
               ),
-              SizedBox(height: 40),
+              SizedBox(height: 2.h),
               MYTEXTFIELD(
                 hintText: "Email or Username",
                 icon: null,
                 onPressed: () {},
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 2.h),
               MYTEXTFIELD(
                 hintText: "password",
                 onPressed: showPassword,
                 obsecureText: showPass ? false : true,
                 icon: showPass ? Icons.visibility_off : Icons.visibility,
               ),
-              SizedBox(height: 12),
+              SizedBox(height: 2.h),
               Container(
                 margin: EdgeInsets.symmetric(horizontal: 25),
                 child: Row(
@@ -93,7 +94,7 @@ class _LOGINSCREENState extends State<LOGINSCREEN> {
                   ],
                 ),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 2.h),
               MYBUTTON(
                 customColor: Color.fromARGB(255, 10, 185, 121),
                 text: "Sign In",
@@ -107,7 +108,7 @@ class _LOGINSCREENState extends State<LOGINSCREEN> {
                     fontWeight: FontWeight.bold,
                     color: Colors.white),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 2.h),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -119,10 +120,10 @@ class _LOGINSCREENState extends State<LOGINSCREEN> {
                     ),
                     child: Image.asset(
                       'assets/images/facebook.png',
-                      width: 50,
+                      width: 10.w,
                     ),
                   ),
-                  SizedBox(width: 20),
+                  SizedBox(width: 5.w),
                   Container(
                       padding: EdgeInsets.all(7),
                       decoration: BoxDecoration(
@@ -131,9 +132,9 @@ class _LOGINSCREENState extends State<LOGINSCREEN> {
                       ),
                       child: Image.asset(
                         'assets/images/google.png',
-                        width: 50,
+                        width: 10.w,
                       )),
-                  SizedBox(width: 20),
+                  SizedBox(width: 5.w),
                   Container(
                       padding: EdgeInsets.all(7),
                       decoration: BoxDecoration(
@@ -147,7 +148,7 @@ class _LOGINSCREENState extends State<LOGINSCREEN> {
                       )),
                 ],
               ),
-              SizedBox(height: 40),
+              SizedBox(height: 5.h),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -157,7 +158,7 @@ class _LOGINSCREENState extends State<LOGINSCREEN> {
                       color: Colors.white,
                     ),
                   ),
-                  SizedBox(width: 20),
+                  SizedBox(width: 5.w),
                   GestureDetector(
                     onTap: () {
                       Navigator.push(

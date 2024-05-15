@@ -16,7 +16,7 @@ class LOGINSIGNUPSCREEN extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(
-              height: 100,
+              height: 50,
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
