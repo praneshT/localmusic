@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:localmusic/SETTINGS/Settings.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});
@@ -38,6 +39,9 @@ class _ProfileState extends State<Profile> {
       ),
       body: Column(
         children: [
+          SizedBox(
+            height: 1.h,
+          ),
           Center(
             child: CircleAvatar(
               radius: 90,
@@ -46,7 +50,7 @@ class _ProfileState extends State<Profile> {
             ),
           ),
           SizedBox(
-            height: 10,
+            height: 3.h,
           ),
           Text(
             'SILVER SIVA',
@@ -54,7 +58,7 @@ class _ProfileState extends State<Profile> {
                 color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
           ),
           SizedBox(
-            height: 60,
+            height: 5.h,
           ),
           Container(
             child: Row(
@@ -157,7 +161,7 @@ class _ProfileState extends State<Profile> {
             ),
           ),
           SizedBox(
-            height: 30,
+            height: 5.h,
           ),
           TextButton.icon(
             style: TextButton.styleFrom(

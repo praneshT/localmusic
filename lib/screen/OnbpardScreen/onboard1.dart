@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:localmusic/screen/OnbpardScreen/ContentONBOARD.dart';
 import 'package:localmusic/screen/login_screen.dart';
 import 'package:localmusic/screen/login_signup_screen.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 
 class Onbording extends StatefulWidget {
   @override
@@ -42,37 +43,44 @@ class _OnbordingState extends State<Onbording> {
               },
               itemBuilder: (_, i) {
                 return Padding(
-                  padding: const EdgeInsets.all(40),
-                  child: Column(
-                    children: [
-                      Image(image: AssetImage("assets/images/loding.png")),
-                      // Image.asset(
-                      //   "assets/images/nature1.png",
-                      //   height: 100,
-                      // ),
-                      Text(
-                        contents[i].title,
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
+                  padding: const EdgeInsets.all(90),
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        Image(
+                            image: AssetImage(
+                          "assets/images/loding.png",
+                        )),
+                        // Image.asset(
+                        //   "assets/images/nature1.png",
+                        //   height: 100,
+                        // ),
+                        Text(
+                          contents[i].title,
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                      SizedBox(height: 20),
-                      Text(
-                        contents[i].discription,
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.grey,
-                        ),
-                      )
-                    ],
+                        SizedBox(height: 2.h),
+                        Text(
+                          contents[i].discription,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 15,
+                            color: Colors.grey,
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 );
               },
             ),
           ),
           Container(
+            height: 1.h,
+            // color: Colors.transparent,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: List.generate(
@@ -82,7 +90,7 @@ class _OnbordingState extends State<Onbording> {
             ),
           ),
           Container(
-            height: 60,
+            // height: 0.2.h,
             margin: EdgeInsets.all(40),
             width: double.infinity,
             child: TextButton(
@@ -116,7 +124,7 @@ class _OnbordingState extends State<Onbording> {
 
   Container buildDot(int index, BuildContext context) {
     return Container(
-      height: 10,
+      height: 1.h,
       width: currentIndex == index ? 25 : 10,
       margin: EdgeInsets.only(right: 5),
       decoration: BoxDecoration(

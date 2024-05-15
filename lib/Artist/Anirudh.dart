@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 
 class Anirudh extends StatefulWidget {
   const Anirudh({super.key});
@@ -54,7 +55,7 @@ class _AnirundState extends State<Anirudh> {
                     Icons.share,
                     color: Colors.white,
                   ),
-                  SizedBox(width: 10), // Added for spacing
+                  SizedBox(width: 5.w), // Added for spacing
                   Icon(
                     Icons.more_vert,
                     color: Colors.white,
@@ -62,9 +63,7 @@ class _AnirundState extends State<Anirudh> {
                 ],
               ),
             ),
-            SizedBox(
-              height: 5,
-            ),
+            SizedBox(height: 2.5.h),
             ListTile(
               shape: StadiumBorder(side: BorderSide(color: Colors.purple)),
               title: Text(

@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:glass/glass.dart';
 // import 'package:homescreen/screens/see_all.dart';
 import 'package:localmusic/screens/see_all.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 
 class HOMESCREEN extends StatefulWidget {
   const HOMESCREEN({super.key});
@@ -182,7 +183,7 @@ class _HOMESCREENState extends State<HOMESCREEN> {
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
             ),
-            SizedBox(height: 10),
+            SizedBox(height: 4.h),
             // Container(
             //   child: Row(
             //     children: <Widget>[
@@ -220,7 +221,7 @@ class _HOMESCREENState extends State<HOMESCREEN> {
             //     ],
             //   ),
             // ),
-            SizedBox(height: 10),
+            // SizedBox(height: 4.h),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
@@ -322,7 +323,7 @@ Widget buildCard(String imageUrl, Widget title) => Padding(
               fit: BoxFit.fitHeight,
             ),
             Positioned(
-              top: 200,
+              top: 100.h,
               bottom: 0,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -340,8 +341,8 @@ Widget buildCard(String imageUrl, Widget title) => Padding(
             ),
           ],
         ),
-        width: 330,
-        height: 200,
+        width: 200.w,
+        height: 150.h,
       ),
     );
 
