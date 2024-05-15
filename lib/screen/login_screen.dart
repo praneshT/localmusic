@@ -46,7 +46,7 @@ class _LOGINSCREENState extends State<LOGINSCREEN> {
                 color: Color.fromARGB(255, 10, 185, 121),
                 width: 300,
               ),
-              SizedBox(height: 2.h),
+              SizedBox(height: 4.h),
               MYTEXTFIELD(
                 hintText: "Email or Username",
                 icon: null,
@@ -59,7 +59,7 @@ class _LOGINSCREENState extends State<LOGINSCREEN> {
                 obsecureText: showPass ? false : true,
                 icon: showPass ? Icons.visibility_off : Icons.visibility,
               ),
-              SizedBox(height: 2.h),
+              SizedBox(height: 3.h),
               Container(
                 margin: EdgeInsets.symmetric(horizontal: 25),
                 child: Row(
@@ -94,7 +94,7 @@ class _LOGINSCREENState extends State<LOGINSCREEN> {
                   ],
                 ),
               ),
-              SizedBox(height: 2.h),
+              SizedBox(height: 5.h),
               MYBUTTON(
                 customColor: Color.fromARGB(255, 10, 185, 121),
                 text: "Sign In",
@@ -108,7 +108,7 @@ class _LOGINSCREENState extends State<LOGINSCREEN> {
                     fontWeight: FontWeight.bold,
                     color: Colors.white),
               ),
-              SizedBox(height: 2.h),
+              SizedBox(height: 4.h),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -134,7 +134,7 @@ class _LOGINSCREENState extends State<LOGINSCREEN> {
                         'assets/images/google.png',
                         width: 10.w,
                       )),
-                  SizedBox(width: 5.w),
+                  SizedBox(width: 4.w),
                   Container(
                       padding: EdgeInsets.all(7),
                       decoration: BoxDecoration(
