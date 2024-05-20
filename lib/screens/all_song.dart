@@ -4,6 +4,7 @@ import 'package:localmusic/screens/dhanush_ts.dart';
 import 'package:localmusic/screens/dq_ts.dart';
 import 'package:localmusic/screens/fafa.dart';
 import 'package:localmusic/screens/mb_ts.dart';
+import 'package:localmusic/screens/mo_ts.dart';
 import 'package:localmusic/screens/naga_ts.dart';
 import 'package:localmusic/screens/pawan_ts.dart';
 import 'package:localmusic/screens/prabhas_ts.dart';
@@ -499,7 +500,12 @@ class _ALLSONGState extends State<ALLSONG> {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MOSONGS()),
+                        );
+                      },
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(

@@ -19,7 +19,7 @@ class _DQSONGSState extends State<DQSONGS> {
           color: Colors.white,
         ),
         title: Text(
-          'FAFA SONGS',
+          'DQ SONGS',
           style: TextStyle(fontSize: 18, color: Colors.white),
         ),
         centerTitle: true, // Center align the title
@@ -39,16 +39,15 @@ class _DQSONGSState extends State<DQSONGS> {
                   ),
                 ),
                 child: Center(
-                  child:
-                      Image(image: AssetImage("assets/images/tovino_ts1.jpg")),
+                  child: Image(image: AssetImage("assets/images/dq_ts1.jpg")),
                 ),
               ),
               title: Text(
-                'MAHESHINTE PRATHIKAARAM - BIJIBAL',
+                'CHARLIE -GOPI SUNDAR',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'FAFA',
+                'DQ',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -87,17 +86,17 @@ class _DQSONGSState extends State<DQSONGS> {
                 ),
                 child: Center(
                   child: Image(
-                    image: AssetImage("assets/images/tovino_ts2.jpg"),
+                    image: AssetImage("assets/images/dq_ts2.jpg"),
                     fit: BoxFit.cover,
                   ),
                 ),
               ),
               title: Text(
-                'THONDIMUTHALUM DRIKSAKSHIYUM -BIJIBAL',
+                'HEY SINAMIKA - GOVIND VASANTHA',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'FAFA',
+                'DQ',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -138,17 +137,17 @@ class _DQSONGSState extends State<DQSONGS> {
                 ),
                 child: Center(
                   child: Image(
-                    image: AssetImage("assets/images/tovino_ts3.jpg"),
+                    image: AssetImage("assets/images/dq_ts3.jpeg"),
                     fit: BoxFit.fill,
                   ),
                 ),
               ),
               title: Text(
-                'VARATHAN -  SUSHIN SHYAM',
+                'KURUP -  SUSHIN SHYAM',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'FAFA',
+                'DQ',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -187,16 +186,15 @@ class _DQSONGSState extends State<DQSONGS> {
                   ),
                 ),
                 child: Center(
-                  child:
-                      Image(image: AssetImage("assets/images/tovino_ts4.jpg")),
+                  child: Image(image: AssetImage("assets/images/dq_ts4.jpg")),
                 ),
               ),
               title: Text(
-                'KUMBALANGI NIGHTS  - SUSHIN SHYAM',
+                'CIA - GOVIND VASANTHA',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'FAFA',
+                'DQ',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -234,16 +232,15 @@ class _DQSONGSState extends State<DQSONGS> {
                   ),
                 ),
                 child: Center(
-                  child:
-                      Image(image: AssetImage("assets/images/tovino_ts5.jpeg")),
+                  child: Image(image: AssetImage("assets/images/dq_ts5.jpg")),
                 ),
               ),
               title: Text(
-                'TRANCE - JACKSON VIJAYAN',
+                'PARAVA - JACKSON VIJAYAN',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'FAFA',
+                'DQ',
                 style: TextStyle(
                     fontSize: 14,
                     color:
@@ -281,15 +278,15 @@ class _DQSONGSState extends State<DQSONGS> {
                   ),
                 ),
                 child: Center(
-                  child: Image(image: AssetImage("assets/images/fafa_ts6.jpg")),
+                  child: Image(image: AssetImage("assets/images/dq_ts6.jpg")),
                 ),
               ),
               title: Text(
-                'JOJI - JUSTIN VARGHESE',
+                'Solo - GOVIND VASANTHA',
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
               subtitle: Text(
-                'FAFA',
+                'DQ',
                 style: TextStyle(
                     fontSize: 14,
                     color:

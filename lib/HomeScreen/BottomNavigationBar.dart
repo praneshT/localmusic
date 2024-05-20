@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:localmusic/FavourtScreen/FavourtScreen.dart';
+import 'package:localmusic/Library/Library.dart';
 import 'package:localmusic/Profile/Profile.dart';
 import 'package:localmusic/Search/Search.dart';
 import 'package:localmusic/screens/home_screen.dart';
@@ -21,6 +22,7 @@ class _BottomNavigationBarExampleState
     HOMESCREEN(),
     Search(),
     Favourite(),
+    Library(),
     Profile(),
   ];
 
@@ -63,6 +65,11 @@ class _BottomNavigationBarExampleState
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite),
             label: 'FAVOURT',
+            backgroundColor: Colors.black,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.library_music),
+            label: 'Libray',
             backgroundColor: Colors.black,
           ),
           BottomNavigationBarItem(
