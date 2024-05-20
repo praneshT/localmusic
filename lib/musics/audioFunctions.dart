@@ -17,7 +17,7 @@ class AudioInfo extends StatelessWidget {
         // ),
         SizedBox(height: 30),
         const Text(
-          'A R Rahman',
+          'S.P.Balasubrahmanyan',
           style: TextStyle(fontSize: 30, color: Colors.white),
         ),
         const SizedBox(height: 20),

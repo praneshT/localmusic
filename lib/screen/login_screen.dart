@@ -3,6 +3,7 @@ import 'package:localmusic/HomeScreen/BottomNavigationBar.dart';
 import 'package:localmusic/components/my_button.dart';
 import 'package:localmusic/components/my_text_field.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class LOGINSCREEN extends StatefulWidget {
   const LOGINSCREEN({Key? key}) : super(key: key);
@@ -13,34 +14,55 @@ class LOGINSCREEN extends StatefulWidget {
 
 class _LOGINSCREENState extends State<LOGINSCREEN> {
   bool showPass = false;
+  bool checkTheBox = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _checkLoginStatus();
+  }
+
   void showPassword() {
     setState(() {
       showPass = !showPass;
     });
   }
 
-  bool checkTheBox = false;
   void check() {
     setState(() {
       checkTheBox = !checkTheBox;
     });
   }
 
+  Future<void> _checkLoginStatus() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    bool isLoggedIn = prefs.getBool('isLoggedIn') ?? false;
+    if (isLoggedIn) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => BottomNavigationBarExample()),
+      );
+    }
+  }
+
+  Future<void> _login() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setBool('isLoggedIn', true);
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (context) => BottomNavigationBarExample()),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text("Log In"),
-      //   backgroundColor: Colors.transparent,
-      //   centerTitle: true,
-      // ),
       backgroundColor: Color.fromARGB(255, 19, 18, 18),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // SizedBox(height: 20.h),
               Image.asset(
                 'assets/images/radio_wave_beta.png',
                 color: Color.fromARGB(255, 10, 185, 121),
@@ -54,7 +76,7 @@ class _LOGINSCREENState extends State<LOGINSCREEN> {
               ),
               SizedBox(height: 2.h),
               MYTEXTFIELD(
-                hintText: "password",
+                hintText: "Password",
                 onPressed: showPassword,
                 obsecureText: showPass ? false : true,
                 icon: showPass ? Icons.visibility_off : Icons.visibility,
@@ -73,7 +95,7 @@ class _LOGINSCREENState extends State<LOGINSCREEN> {
                           ),
                           child: Checkbox(
                             checkColor: Colors.white,
-                            value: checkTheBox ? true : false,
+                            value: checkTheBox,
                             onChanged: (value) {
                               check();
                             },
@@ -98,7 +120,7 @@ class _LOGINSCREENState extends State<LOGINSCREEN> {
               MYBUTTON(
                 customColor: Color.fromARGB(255, 10, 185, 121),
                 text: "Sign In",
-                onTap: () {},
+                onTap: _login,
               ),
               SizedBox(height: 20),
               Text(

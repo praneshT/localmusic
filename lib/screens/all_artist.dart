@@ -7,7 +7,7 @@ import 'package:localmusic/Artist/GVPrakash.dart';
 import 'package:localmusic/Artist/Harris.dart';
 import 'package:localmusic/Artist/Ilayaraja.dart';
 import 'package:localmusic/Artist/Qasxdf.dart';
-import 'package:localmusic/Artist/SPB.dart';
+// import 'package:localmusic/Artist/SPB.dart';
 import 'package:localmusic/Artist/Thaman.dart';
 import 'package:localmusic/Artist/Yuvan.dart';
 import 'package:localmusic/musics/player/playerScreen.dart';

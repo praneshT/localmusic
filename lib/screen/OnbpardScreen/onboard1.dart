@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:localmusic/screen/OnbpardScreen/ContentONBOARD.dart';
-import 'package:localmusic/screen/login_screen.dart';
+// import 'package:localmusic/screen/login_screen.dart';
 import 'package:localmusic/screen/login_signup_screen.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
